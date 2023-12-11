@@ -1,0 +1,247 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(to right, #290B36, #690E64); */
+    /*background-image: url(/images/header.jpg);*/
+    background-image:url(/images/gifbackground.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #230064;
+    color: #1F2833;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px; 
+    overflow: hidden;
+    margin-top: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+
+    background-image: url(/images/title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*style for cart button */
+header .cart {
+    background-color: #FEFE50;
+    color: #1F2833;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    text-decoration: none;
+}
+
+
+
+header .cart:visited {
+    background-color: #FEFE50;
+    color: #1F2833;
+  
+}
+
+header .cart:hover {
+    background-color: #FFD700; 
+}
+
+h1 {
+    /*centers h1 text*/
+    margin: 0 auto;
+    text-align: center;
+   
+
+}
+
+.section-heading {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #cc02ff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+
+
+
+/*style for nav bar */
+nav.oval-nav {
+    background-color: #44318D;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0px; 
+    overflow: hidden; 
+    margin-top: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+    border-color: #1F2833;
+    border-style: solid;
+}
+
+/*style for nav bar links */
+nav.oval-nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px; 
+    margin: 0 10px;
+    background-color: #FEFE50;
+}
+
+nav.oval-nav a:hover {
+    background-color: #FFD700; 
+}
+
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    color: #C5C6C7;
+    
+}
+
+/*style for image container */
+.image-container {
+    background-color: #122181;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #44318D;
+    color: grey;
+    text-align: center;
+    padding: 1em;
+}
+
+/*hover effects for guitar boxes*/
+.image-container {
+    background-color: #122181;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+
+/*removes blue from links*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-image: url(/images/viewCustom.gif);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/*desktop view, yet to add to other .css files*/
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    header {
+        padding: 2em;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav.oval-nav {
+        padding: 2em;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav.oval-nav a {
+        padding: 15px 30px;
+        margin: 0 15px;
+    }
+
+    main {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .image-container {
+        flex: 0 0 22%; 
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .section-heading {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        
+    }
+
+    footer{
+        margin-top: 400px;
+    }
+
+     /* Adjust background size for desktop view */
+     header {
+        background-size: auto; 
+    }
+
+    h2 {
+        background-size: auto; 
+    }
+}
+
+/* Hover effect for image container */
+.image-container:hover {
+    transform: scale(1.05);
+}

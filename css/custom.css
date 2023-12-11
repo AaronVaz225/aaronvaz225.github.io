@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url(/images/header.jpg);*/
+    background-image:url(/images/gifbackground.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #230064;
+    color: #1F2833;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px; /*was 25*/
+    overflow: hidden;
+    margin-top: 0px; /*was 10*/
+    margin-left: 0px; /*was 10*/
+    margin-right: 0px; /*was 10*/
+    
+
+    background-image: url(/images/title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .cart {
+    background-color: #FEFE50;
+    color: #1F2833;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+header .cart:hover {
+    background-color: #FFD700; 
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*for info bar*/
+.section-heading {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #cc02ff; 
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url(/images/select.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    padding-top: 55px;  
+}
+
+nav.oval-nav {
+    background-color: #44318D;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0px; /* was 25 */
+    overflow: hidden; 
+    margin-top: 0px; /* was 10 */
+    margin-left: 0px; /* was 10 */
+    margin-right: 0px; /* was 10 */
+    border-color: #1F2833;
+    border-style: solid;
+}
+
+nav.oval-nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 0 10px;
+    background-color: #FEFE50;
+}
+
+nav.oval-nav a:hover {
+    background-color: #FFD700; 
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    color: #C5C6C7;
+}
+
+section {
+    background-color: #122181;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #FEFE50;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FEFE50;
+    border-radius: 5px;
+    background-color: #1F2833;
+    color: #FEFE50;
+}
+
+footer {
+    background-color: #44318D;
+    color: grey;
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    background-color: #FEFE50;
+    color: #1F2833;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FFD700; 
+}
+
+
+/*desktop view, yet to add to other .css files*/
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    header {
+        padding: 2em;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav.oval-nav {
+        padding: 2em;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav.oval-nav a {
+        padding: 15px 30px;
+        margin: 0 15px;
+    }
+
+    main {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    
+
+    .section-heading {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        
+    }
+
+    footer{
+        margin-top: 400px;
+    }
+
+     /* Adjust background size for desktop view */
+     header {
+        background-size: auto; 
+    }
+
+    /*add me!!!!!!!!!*/
+    .section-heading {
+        background-size: auto; 
+    }
+}
+
+

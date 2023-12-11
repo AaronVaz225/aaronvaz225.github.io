@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomAx.com - Build Your Own Guitar</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <a href="cart.html" class="cart" id="cart">Cart</a>
+    </header>
+
+    <nav class="oval-nav">
+        <a href="index.html" class="oval-btn">Home</a>
+        <a href="build.html" class="oval-btn">Build</a>
+        <a href="about.html" class="oval-btn">About</a>
+    </nav>
+
+    <h2 class="section-heading"></h2>
+
+    <main>
+        <!-- Color Section -->
+        <section id="color">
+            <h2>Choose Color</h2>
+            <label for="color">Select a color:</label>
+            <select id="colorSelect" name="color">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </section>
+
+        <!-- Strings Section -->
+        <section id="strings">
+            <h2>Choose Strings</h2>
+            <label for="strings">Select strings:</label>
+            <select id="stringsSelect" name="strings">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="heavy">Heavy</option>
+            </select>
+        </section>
+
+        <!-- Nut Section -->
+        <section id="nut">
+            <h2>Choose Nut</h2>
+            <label for="nut">Select nut material:</label>
+            <select id="nutSelect" name="nut">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="bone">Bone</option>
+                <option value="plastic">Plastic</option>
+                <option value="brass">Brass</option>
+            </select>
+        </section>
+
+        <!-- Tuners Section -->
+        <section id="tuners">
+            <h2>Choose Tuners</h2>
+            <label for="tuners">Select tuner type:</label>
+            <select id="tunerSelect" name="tuners">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="locking">Locking</option>
+                <option value="vintage">Vintage</option>
+                <option value="gear">Gear</option>
+            </select>
+        </section>
+
+        <!-- Pickups Section -->
+        <section id="pickups">
+            <h2>Choose Pickups</h2>
+            <label for="pickups">Select pickup type:</label>
+            <select id="pickupSelect" name="pickups">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="single-coil">Single Coil</option>
+                <option value="humbucker">Humbucker</option>
+                <option value="p90">P90</option>
+            </select>
+        </section>
+
+        <!-- Add to Cart Button -->
+        <button onclick="addToCart()">Add to Cart</button>
+        
+        <!-- Cart items for testing -->
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total Price: $0.00</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 CustomAx.com. All rights reserved.</p>
+    </footer>
+    <script defer src="script/custom.js"></script>
+</body>
+</html>

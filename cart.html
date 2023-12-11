@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomAx.com - Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <a href="cart.html" class="cart" id="cart">Cart</a>
+    </header>
+
+    <nav class="oval-nav">
+        <a href="index.html" class="oval-btn">Home</a>
+        <a href="build.html" class="oval-btn">Build</a>
+        <a href="about.html" class="oval-btn">About</a>
+    </nav>
+
+    <h2 class="section-heading"></h2>
+    
+    <main>
+        <!-- Cart Items -->
+        <ul id="cart-list"></ul>
+
+        <!-- Total Price -->
+        <p id="total-price">Total Price: $0.00</p>
+    </main>
+    <button id="buy-now-button">Buy Now</button>
+    <footer>
+        <p>&copy; 2023 CustomAx.com. All rights reserved.</p>
+    </footer>
+
+    
+    <script>
+        // Call function to update the cart display when the cart.html page loads
+        window.onload = function () {
+            updateCartDisplay();
+        };
+    </script>
+
+<script defer src="script/custom.js"></script>
+
+
+</body>
+</html>

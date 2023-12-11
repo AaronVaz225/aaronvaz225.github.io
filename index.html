@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomAx.com</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <a href="cart.html" class="cart">Cart</a>
+    </header>
+
+    <nav class="oval-nav">
+        <a href="index.html" class="oval-btn">Home</a>
+        <a href="build.html" class="oval-btn">Build</a>
+        <a href="about.html" class="oval-btn">About</a>
+    </nav>
+    <h2 class="section-heading"></h2>
+    <main>
+        <div class="image-container" onclick="openReview('Lindas Custom Guitar')">
+            <section>
+                <img src="images/guitar1.jpg" alt="Lindas Custom Guitar">
+                <p>Lindas Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Aarons Custom Guitar')">
+            <section>
+                <img src="images/guitar2.jpg" alt="Aarons Custom Guitar">
+                <p>Aarons Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Erics Custom Guitar')">
+            <section>
+                <img src="images/guitar3.jpg" alt="Erics Custom Guitar">
+                <p>Erics Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Mikes Custom Guitar')">
+            <section>
+                <img src="images/guitar4.jpg" alt="Mikes Custom Guitar">
+                <p>Mikes Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Dougs Custom Guitar')">
+            <section>
+                <img src="images/guitar5.jpg" alt="Dougs Custom Guitar">
+                <p>Dougs Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Carols Custom Guitar')">
+            <section>
+                <img src="images/guitar6.jpg" alt="Carols Custom Guitar">
+                <p>Carols Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Peters Custom Guitar')">
+            <section>
+                <img src="images/guitar7.jpg" alt="Peters Custom Guitar">
+                <p>Peters Custom Guitar</p>
+            </section>
+        </div>
+
+        <div class="image-container" onclick="openReview('Amandas Custom Guitar')">
+            <section>
+                <img src="images/guitar8.jpg" alt="Amandas Custom Guitar">
+                <p>Amandas Custom Guitar</p>
+            </section>
+        </div>
+        
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-review"></p>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2023 CustomAx.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>
